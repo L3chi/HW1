@@ -1,0 +1,18 @@
+#Adding the function if user chooses 'a'
+while menu !='q':
+    print("MENU\n")
+    print("a - Add cases\n")
+    print("o - Output all cases in console\n")
+    print("q - Quit\n")
+    menu = input("Enter selection: ")
+    if menu == 'a':
+
+        countryname = input("Enter country name: ")
+        year = int(input("Enter year: "))
+        totalcases = int(input("Enter total cases: "))
+        deaths = int(input("Enter deaths: "))
+        recovered = int(input("Enter recovered: "))
+
+        query = "insert into covidcases (countryname, year, totalcases, deaths, recovered) values (%s, %s, %s, %s, %s))"
+        
+        mycursor.execute(query)
