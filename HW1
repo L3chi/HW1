@@ -1,0 +1,8 @@
+#Creating the menu
+menu = 1
+while menu !='q':
+    print("MENU\n")
+    print("a - Add cases\n")
+    print("o - Output all cases in console\n")
+    print("q - Quit\n")
+    menu = input("Enter selection: ")
